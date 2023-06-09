@@ -112,7 +112,7 @@ function ChallengeCard(props: {
         display: "flex",
         flexDirection: "column",
         border: "solid",
-        borderColor: !props.isFinalized ? "blue" : "divider",
+        borderColor: !props.isFinalized ? "kbackground" : "divider",
         borderWidth: 6,
         borderRadius: 2,
         py: 2,
@@ -123,8 +123,8 @@ function ChallengeCard(props: {
       {/* Link */}
       <Stack direction="row" spacing={1}>
         <Typography fontWeight={700}>
-          🏆
-          <MuiLink href={`/challenges/${props.id}`}>
+        🌎 {''}
+          <MuiLink color='#008000' href={`/challenges/${props.id}`}>
           Quest #{props.id}
           </MuiLink>
         </Typography>
@@ -138,9 +138,9 @@ function ChallengeCard(props: {
       </Typography>
       {/* Details */}
       <Stack direction="row" spacing={2} mt={1}>
-        <Typography variant="body2">
+        <Typography color='#008000' variant="body2">
           👤
-          <MuiLink href={`/accounts/${props.creator}`}>
+          <MuiLink color='#008000'  href={`/accounts/${props.creator}`}>
             {addressToShortAddress(props.creator)}
           </MuiLink>
         </Typography>

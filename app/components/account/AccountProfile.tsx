@@ -84,6 +84,7 @@ export default function AccountProfile(props: { address: string }) {
         {profileData?.attributes?.[0]?.value && (
           <Typography
             variant="h4"
+            color='#008000'
             fontWeight={700}
             textAlign="center"
             sx={{ mb: 0.5 }}
@@ -93,7 +94,7 @@ export default function AccountProfile(props: { address: string }) {
         )}
         {/* Description */}
         {profileData?.attributes?.[1]?.value && (
-          <Typography textAlign="center" sx={{ maxWidth: 480, mb: 1.5 }}>
+          <Typography color='#008000' textAlign="center" sx={{ maxWidth: 480, mb: 1.5 }}>
             {profileData.attributes[1].value}
           </Typography>
         )}
@@ -109,7 +110,7 @@ export default function AccountProfile(props: { address: string }) {
                 href={`mailto:${profileData.attributes[2].value}`}
                 target="_blank"
                 component="a"
-                color="primary"
+               
               >
                 <AlternateEmail />
               </IconButton>
@@ -119,7 +120,7 @@ export default function AccountProfile(props: { address: string }) {
                 href={profileData.attributes[3].value}
                 target="_blank"
                 component="a"
-                color="primary"
+                
               >
                 <Language />
               </IconButton>
@@ -129,7 +130,7 @@ export default function AccountProfile(props: { address: string }) {
                 href={`https://twitter.com/${profileData.attributes[4].value}`}
                 target="_blank"
                 component="a"
-                color="primary"
+                
               >
                 <Twitter />
               </IconButton>
@@ -159,7 +160,7 @@ export default function AccountProfile(props: { address: string }) {
             alignItems="center"
             sx={{ mb: { xs: 1, md: 0 } }}
           >
-            <Typography fontWeight={700} sx={{ mr: 1.5 }}>
+            <Typography color='#008000' fontWeight={700} sx={{ mr: 1.5 }}>
               {addressToShortAddress(props.address)}
             </Typography>
           </Stack>

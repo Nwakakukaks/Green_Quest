@@ -27,7 +27,7 @@ export default function ChallengeResult(props: {
           and Quest was finalized
         </WidgetSeparatorText>
         {/* Finalized timestamp */}
-        <WidgetBox bgcolor={palette.yellow} mt={2}>
+        <WidgetBox bgcolor={palette.kbackground} mt={2}>
           <WidgetTitle>On</WidgetTitle>
           <WidgetText>
             {bigNumberTimestampToLocaleDateString(props.finalizedTimestamp)}
@@ -35,7 +35,7 @@ export default function ChallengeResult(props: {
         </WidgetBox>
         <WidgetSeparatorText mt={2}>with</WidgetSeparatorText>
         {/* Winners number */}
-        <WidgetBox bgcolor={palette.orange} mt={2}>
+        <WidgetBox bgcolor={palette.yellow} mt={2}>
           <WidgetTitle>Winners</WidgetTitle>
           <WidgetText>{props.winnersNumber.toNumber()}</WidgetText>
         </WidgetBox>

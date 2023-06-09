@@ -12,11 +12,12 @@ export default function Challenges() {
       <CentralizedBox>
         <Typography
           variant="h4"
+          color='#008000' 
           fontWeight={700}
           textAlign="center"
           sx={{ mb: 4 }}
         >
-          🏆 Challenges
+           Quests
         </Typography>
         <ChallengeList />
       </CentralizedBox>
