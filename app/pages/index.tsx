@@ -46,12 +46,12 @@ export default function Landing() {
             }}
           >
             <Typography
-              variant="h2"
+              variant="h1"
               fontWeight={700}
               textAlign="center"
               sx={{ mt: 36, mb: 2 }}
             >
-              Engage in daily quests
+              join quests
             </Typography>
             <Typography
               variant="h5"
@@ -60,7 +60,7 @@ export default function Landing() {
               color="white"
               gutterBottom
             >
-            Earn MATICS making the earth SAFE 
+            Earn MATICS making the earth safer
             </Typography>
             <XxlLoadingButton
               variant="contained"
