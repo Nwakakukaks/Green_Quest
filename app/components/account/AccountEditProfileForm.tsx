@@ -124,7 +124,7 @@ export default function AccountEditProfileForm(props: {
         imageIpfsUri = uri;
       }
       const profileUriData: ProfileUriDataEntity = {
-        name: "Community Challenge Profile",
+        name: "User Profile",
         image: imageIpfsUri || props.profileData?.image || "",
         attributes: [
           { trait_type: "name", value: values.name },

@@ -46,34 +46,34 @@ export default function Landing() {
             }}
           >
             <Typography
-              variant="h1"
+              variant="h2"
               fontWeight={700}
               textAlign="center"
               sx={{ mt: 36, mb: 2 }}
             >
-              Boost engagement
+              Engage in daily quests
             </Typography>
             <Typography
-              variant="h4"
+              variant="h5"
               fontWeight={700}
               textAlign="center"
               color="white"
               gutterBottom
             >
-              in your community with challenges!
+            earn tokens making the earth SAFE 
             </Typography>
             <XxlLoadingButton
               variant="contained"
               href="/challenges/start"
               sx={{
-                color: "purpleLight",
-                background: "#FFFFFF",
-                ":hover": { background: "#FFFFFF" },
+                color: "White",
+                background: "#228B22",
+                ":hover": { background: "#228B22" },
                 mt: 4,
                 mb: 12,
               }}
             >
-              Start Challenge
+              Start Quest
             </XxlLoadingButton>
           </Container>
         </Box>
@@ -104,7 +104,7 @@ export default function Landing() {
                   sx={{ borderColor: "blue" }}
                   variant="outlined"
                 >
-                  <Typography fontSize={32}>🏆</Typography>
+                  <Typography fontSize={50}>🏁</Typography>
                 </LandingTimelineDot>
                 <TimelineConnector sx={{ height: 12 }} />
               </TimelineSeparator>
@@ -115,34 +115,16 @@ export default function Landing() {
                 </Typography>
               </TimelineContent>
             </TimelineItem>
-            {/* Step two */}
-            <TimelineItem>
-              <TimelineSeparator>
-                <TimelineConnector sx={{ height: 12 }} />
-                <LandingTimelineDot
-                  sx={{ borderColor: "purpleLight" }}
-                  variant="outlined"
-                >
-                  <Typography fontSize={32}>🔗</Typography>
-                </LandingTimelineDot>
-                <TimelineConnector sx={{ height: 12 }} />
-              </TimelineSeparator>
-              <TimelineContent sx={{ py: "48px", px: 2 }}>
-                <Typography fontWeight={700}>
-                  After that, shares the link to the challenge with other
-                  members of the community
-                </Typography>
-              </TimelineContent>
-            </TimelineItem>
+  
             {/* Step three */}
             <TimelineItem>
               <TimelineSeparator>
                 <TimelineConnector sx={{ height: 12 }} />
                 <LandingTimelineDot
-                  sx={{ borderColor: "purpleDark" }}
+                  sx={{ borderColor: "green" }}
                   variant="outlined"
                 >
-                  <Typography fontSize={32}>💪</Typography>
+                  <Typography fontSize={50}>👥</Typography>
                 </LandingTimelineDot>
                 <TimelineConnector sx={{ height: 12 }} />
               </TimelineSeparator>
@@ -158,10 +140,10 @@ export default function Landing() {
               <TimelineSeparator>
                 <TimelineConnector sx={{ height: 12 }} />
                 <LandingTimelineDot
-                  sx={{ borderColor: "green" }}
+                  sx={{ borderColor: "yellow" }}
                   variant="outlined"
                 >
-                  <Typography fontSize={32}>✔</Typography>
+                  <Typography fontSize={50}>✔</Typography>
                 </LandingTimelineDot>
                 <TimelineConnector sx={{ height: 12 }} />
               </TimelineSeparator>
@@ -181,7 +163,7 @@ export default function Landing() {
                   sx={{ borderColor: "red" }}
                   variant="outlined"
                 >
-                  <Typography fontSize={32}>🍾</Typography>
+                  <Typography fontSize={50}>💰</Typography>
                 </LandingTimelineDot>
                 <TimelineConnector sx={{ height: 12 }} />
               </TimelineSeparator>
@@ -198,10 +180,10 @@ export default function Landing() {
               <TimelineSeparator>
                 <TimelineConnector sx={{ height: 12 }} />
                 <LandingTimelineDot
-                  sx={{ borderColor: "yellow" }}
+                  sx={{ borderColor: "green" }}
                   variant="outlined"
                 >
-                  <Typography fontSize={32}>🤩</Typography>
+                  <Typography fontSize={50}>🌎</Typography>
                 </LandingTimelineDot>
                 <TimelineConnector sx={{ height: 12 }} />
               </TimelineSeparator>
@@ -218,7 +200,7 @@ export default function Landing() {
             href="/challenges/start"
             sx={{ mt: 2 }}
           >
-            Boost Engagement
+            Start Quest
           </XxlLoadingButton>
         </Container>
       </CentralizedBox>
