@@ -60,7 +60,7 @@ export default function Landing() {
               color="white"
               gutterBottom
             >
-            earn tokens making the earth SAFE 
+            Earn MATICS making the earth SAFE 
             </Typography>
             <XxlLoadingButton
               variant="contained"
