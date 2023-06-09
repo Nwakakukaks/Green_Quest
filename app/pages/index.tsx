@@ -46,12 +46,12 @@ export default function Landing() {
             }}
           >
             <Typography
-              variant="h1"
+              variant="h2"
               fontWeight={700}
               textAlign="center"
               sx={{ mt: 36, mb: 2 }}
             >
-              join quests
+             Engage In Daily Quests
             </Typography>
             <Typography
               variant="h5"
@@ -112,7 +112,7 @@ export default function Landing() {
               </TimelineSeparator>
               <TimelineContent sx={{ py: "48px", px: 2 }}>
                 <Typography fontWeight={700} color="#008000">
-                Organization creates a series of green quests, defining the quest duration and pool prize for winners paid out in MATIC
+                Organization creates a series of green quests, defines the quest duration and pool prize for winners paid out in MATIC
                 </Typography>
               </TimelineContent>
             </TimelineItem>
