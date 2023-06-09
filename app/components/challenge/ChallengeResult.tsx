@@ -24,7 +24,7 @@ export default function ChallengeResult(props: {
       <Box sx={{ width: 1, ...props.sx }}>
         <ThickDivider />
         <WidgetSeparatorText mt={6}>
-          and challenge was finalized
+          and Quest was finalized
         </WidgetSeparatorText>
         {/* Finalized timestamp */}
         <WidgetBox bgcolor={palette.yellow} mt={2}>

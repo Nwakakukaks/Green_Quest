@@ -6,14 +6,14 @@ import {
   WidgetTitle,
   XxlLoadingButton,
 } from "components/styled";
-import { QuestContractAbi } from "contracts/abi/QuestContract";
+import { challengeContractAbi } from "contracts/abi/challengeContract";
 import { BigNumber } from "ethers";
 import { Form, Formik } from "formik";
 import useDebounce from "hooks/useDebounce";
 import useToasts from "hooks/useToast";
 import { useEffect, useState } from "react";
 import { palette } from "theme/palette";
-import { getChainId, getQuestContractAddress } from "utils/chains";
+import { getChainId, getChallengeContractAddress } from "utils/chains";
 import {
   useContractWrite,
   useNetwork,
@@ -49,8 +49,8 @@ export default function QuestParticipateDialog(props: {
   // Contract states
   const { config: contractPrepareConfig, isError: isContractPrepareError } =
     usePrepareContractWrite({
-      address: getQuestContractAddress(chain),
-      abi: QuestContractAbi,
+      address: getChallengeContractAddress(chain),
+      abi: challengeContractAbi,
       functionName: "participate",
       args: [BigNumber.from(props.id), debouncedFormValues.handle],
       chainId: getChainId(chain),
