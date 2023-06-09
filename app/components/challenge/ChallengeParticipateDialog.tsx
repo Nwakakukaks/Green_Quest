@@ -39,7 +39,7 @@ export default function QuestParticipateDialog(props: {
 
   // Form states
   const [formValues, setFormValues] = useState({
-    handle: "Hanal del",
+    handle: "",
   });
   const formValidationSchema = yup.object({
     handle: yup.string().required(),
@@ -83,7 +83,7 @@ export default function QuestParticipateDialog(props: {
    */
   useEffect(() => {
     if (isTransactionSuccess) {
-      showToastSuccess("You successfully joined the Quest!");
+      showToastSuccess("You've successfully joined the Quest!");
       props.onSuccess?.();
       close();
     }
@@ -92,10 +92,10 @@ export default function QuestParticipateDialog(props: {
   return (
     <Dialog open={isOpen} onClose={close} maxWidth="sm" fullWidth>
       <DialogContent sx={{ my: 2 }}>
-        <Typography variant="h4" fontWeight={700} textAlign="center">
-          👥 To participate
+        <Typography variant="h4" fontWeight={700} color='#008000' textAlign="center">
+           To participate
         </Typography>
-        <Typography fontWeight={700} textAlign="center" sx={{ mt: 2 }}>
+        <Typography fontWeight={700} textAlign="center" color='#008000' sx={{ mt: 2 }}>
           Link your Social Profile
         </Typography>
         <Formik
@@ -107,7 +107,7 @@ export default function QuestParticipateDialog(props: {
             <Form style={{ width: "100%" }}>
               <FormikHelper onChange={(values: any) => setFormValues(values)} />
               {/* Handle input */}
-              <WidgetBox bgcolor={palette.purpleDark} mt={3}>
+              <WidgetBox bgcolor={palette.kbackground} mt={3}>
                 <WidgetTitle>Handle</WidgetTitle>
                 <WidgetInputTextField
                   id="handle"

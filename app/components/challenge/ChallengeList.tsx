@@ -125,7 +125,7 @@ function ChallengeCard(props: {
         <Typography fontWeight={700}>
           🏆
           <MuiLink href={`/challenges/${props.id}`}>
-            Challenge #{props.id}
+          Quest #{props.id}
           </MuiLink>
         </Typography>
         {props.isFinalized && (

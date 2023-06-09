@@ -60,8 +60,8 @@ export default function ChallengeCompleteDialog(props: {
           my: 2,
         }}
       >
-        <Typography variant="h4" fontWeight={700} textAlign="center" mb={4}>
-          ✅ Completion
+        <Typography color='#008000' variant="h4" fontWeight={700} textAlign="center" mb={4}>
+           Complete Quest
         </Typography>
         {!isChallengeCompletedFetching ? (
           isChallengeCompleted ? (
@@ -178,7 +178,7 @@ function ChallengeCompleteForm(props: { id: string; onSuccess?: Function }) {
 
   return (
     <>
-      <WidgetSeparatorText>
+      <WidgetSeparatorText color='#008000' >
         Quest verified, now you can complete the challenge
       </WidgetSeparatorText>
       <XxlLoadingButton

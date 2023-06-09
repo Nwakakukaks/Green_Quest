@@ -43,25 +43,25 @@ export default function QuestParams(props: {
         textAlign="center"
         sx={{ mb: 3 }}
       >
-        🏆 Quest #{props.id}
+        🌎 Quest #{props.id}
       </Typography>
-      <WidgetSeparatorText mb={2}>was started</WidgetSeparatorText>
+      <WidgetSeparatorText mb={2}></WidgetSeparatorText>
       {/* Creator */}
-      <WidgetBox bgcolor={palette.blue} mb={2}>
-        <WidgetTitle>By</WidgetTitle>
-        <WidgetLink href={`/accounts/${props.creator.toString()}`}>
+      <WidgetBox bgcolor={palette.kbackground} mb={2}>
+        <WidgetTitle>Created By</WidgetTitle>
+        <WidgetLink color='#008000' href={`/accounts/${props.creator.toString()}`}>
           👤 {addressToShortAddress(props.creator.toString())}
         </WidgetLink>
       </WidgetBox>
-      <WidgetSeparatorText mb={2}>with</WidgetSeparatorText>
+      <WidgetSeparatorText mb={2}></WidgetSeparatorText>
       {/* Description */}
-      <WidgetBox bgcolor={palette.purpleLight} mb={2}>
-        <WidgetTitle>Description</WidgetTitle>
+      <WidgetBox bgcolor={palette.kbackground} mb={2}>
+        <WidgetTitle>Quest Description</WidgetTitle>
         <WidgetText>{props.description}</WidgetText>
       </WidgetBox>
-      <WidgetSeparatorText mb={2}>and</WidgetSeparatorText>
+      <WidgetSeparatorText mb={2}></WidgetSeparatorText>
       {/* Prize */}
-      <WidgetBox bgcolor={palette.green} mb={2}>
+      <WidgetBox bgcolor={palette.kbackground} mb={2}>
         <WidgetTitle>Prize Pool</WidgetTitle>
         <Stack direction="row" spacing={1}>
           <WidgetText>{ethers.utils.formatEther(props.prize)}</WidgetText>
@@ -69,11 +69,10 @@ export default function QuestParams(props: {
         </Stack>
       </WidgetBox>
       <WidgetSeparatorText mb={2}>
-        To be shared among the participants who will complete the
-        Quest
+        Prize pool would be shared by participants who successfully complete the quests
       </WidgetSeparatorText>
       {/* Deadline */}
-      <WidgetBox bgcolor={palette.red} mb={2}>
+      <WidgetBox bgcolor={palette.kbackground} mb={2}>
         <WidgetTitle>By</WidgetTitle>
         <WidgetText>
           {bigNumberTimestampToLocaleDateString(props.deadline)}

@@ -30,8 +30,8 @@ export default function ChallengeParticipants(props: {
       }}
     >
       {/* Title */}
-      <Typography variant="h4" fontWeight={700} textAlign="center">
-        👥 Participants
+      <Typography variant="h4" color= "#008000" fontWeight={700} textAlign="center">
+         Participants
       </Typography>
       {/* Actions */}
       <ChallengeParticipantActions
@@ -57,7 +57,7 @@ export default function ChallengeParticipants(props: {
       )}
       {/* Empty list */}
       {props.participants.length === 0 && (
-        <Typography textAlign="center" mt={4}>
+        <Typography color='#008000' textAlign="center" mt={4}>
           no participants
         </Typography>
       )}
@@ -157,15 +157,15 @@ function ChallengeParticipantCard(props: {
       {/* Account */}
       <Typography gutterBottom>
         👤{" "}
-        <MuiLink href={`/accounts/${props.accountAddress}`} fontWeight={700}>
+        <MuiLink color='#008000' href={`/accounts/${props.accountAddress}`} fontWeight={700}>
           {addressToShortAddress(props.accountAddress)}
         </MuiLink>
         {address === props.accountAddress ? " (you)" : ""}
       </Typography>
       {/* Handle */}
       <Typography gutterBottom>
-        🐤{" "}
-        <MuiLink href={`https://twitter.com/${props.handle}`} target="_blank">
+        {" "}
+        <MuiLink color='#008000' href={`https://twitter.com/${props.handle}`} target="_blank">
           @{props.handle}
         </MuiLink>
       </Typography>
