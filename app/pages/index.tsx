@@ -95,7 +95,7 @@ export default function Landing() {
             textAlign="center"
             color="#008000"
           >
-            How does it work?
+            How it works?
           </Typography>
           <Timeline position="alternate" sx={{ width: 1, mt: 2 }}>
             {/* Step one */}
@@ -112,8 +112,7 @@ export default function Landing() {
               </TimelineSeparator>
               <TimelineContent sx={{ py: "48px", px: 2 }}>
                 <Typography fontWeight={700} color="#008000">
-                  Community starts challenge by choosing a template with rules
-                  for participation and defining prize pool, deadline
+                Organization creates a series of green quests, defining the quest duration and pool prize for winners paid out in MATIC
                 </Typography>
               </TimelineContent>
             </TimelineItem>
@@ -132,7 +131,7 @@ export default function Landing() {
               </TimelineSeparator>
               <TimelineContent sx={{ py: "48px", px: 2 }}>
                 <Typography fontWeight={700} color="#008000">
-                  Members join the challenge, also share it with their friends
+                  members join and, also share it with their friends
                   if the challenge rules motivate them to do so
                 </Typography>
               </TimelineContent>
@@ -153,7 +152,7 @@ export default function Landing() {
                 <Typography fontWeight={700} color= "#008000">
                   Participants fulfill all conditions and mark the challenge as
                   completed, which will be verified by smart contracts and
-                  oracles
+                  chainlink oracles
                 </Typography>
               </TimelineContent>
             </TimelineItem>
@@ -171,9 +170,8 @@ export default function Landing() {
               </TimelineSeparator>
               <TimelineContent sx={{ py: "48px", px: 2 }}>
                 <Typography fontWeight={700} color="#008000">
-                  After the deadline, the community finalizes the challenge, and
-                  each participant with a verified completion will receive a
-                  part of the prize pool
+                  After the deadline, the organization finalizes the quest, and payout is processed automatically by chainlink keepers to
+                  each participant with a verified completion. 
                 </Typography>
               </TimelineContent>
             </TimelineItem>
@@ -191,8 +189,7 @@ export default function Landing() {
               </TimelineSeparator>
               <TimelineContent sx={{ py: "48px", px: 2 }}>
                 <Typography fontWeight={700} color="#008000">
-                  Eventually everyone is happy, and the community becomes more
-                  engaged
+                  End of Quest, 
                 </Typography>
               </TimelineContent>
             </TimelineItem>
