@@ -1,3 +1,3 @@
 export const CONTACTS = {
-  github: "https://github.com/nwakakukaks/granted-protocol",
+  github: "https://github.com/Nwakakukaks/Green_Quest",
 };
