@@ -33,7 +33,7 @@ export default function ChallengeShareActions(props: {
         }}
       >
         <Typography variant="h6" textAlign="center">
-          🗣️ Share this challenge with your community
+          🗣️ Share Quest 
         </Typography>
         {/* Buttons to share via social networks */}
         <Stack

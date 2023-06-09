@@ -48,19 +48,22 @@ export default function ChallengeStartForm(props: {
   const { showToastError } = useToasts();
 
   const challengeTypes = [
-    "Tweet every day for X days with hashtag Y and mention Z",
+    "Calculate your personal carbon footprint using online tools or calculators.",
+    'Set goals to reduce your carbon footprint by adopting energy-saving habits and lifestyle changes.',
+    'Join local or global climate action networks to amplify your impact and collaborate on larger initiatives.',
+    'Create informative content (blogs, social media posts, videos) to raise awareness about climate change, renewable energy, and the importance of individual actions.'
   ];
 
   // Form states
   const [formValues, setFormValues] = useState({
     duration: 30,
-    hashtag: "#30DaysOfCode",
-    handle: "BestDevsDAO",
+    hashtag: "#ReduceCarbonEmissions",
+    handle: "GreenQuestOrg",
     description:
-      "Code minimum an hour and tweet your progress for 30 days with the #30DaysOfCode hashtag and mention @BestDevsDAO to win prizes from BestDevsDAO",
-    prize: 0.1,
+      "Join local or global climate action networks to amplify your impact and collaborate on larger initiatives, tweet your engagements with the hashtag #ReduceCarbonEmissions and mention @GreenQuestOrg to win prizes from the Pool Prize",
+    prize: 5000,
     prizeCurrency: "native",
-    deadline: "2023-03-01",
+    deadline: "2023-06-01",
   });
   const formValidationSchema = yup.object({
     duration: yup.number().required(),
