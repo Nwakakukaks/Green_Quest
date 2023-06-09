@@ -53,10 +53,7 @@ export default function AccountEditProfileForm(props: {
     name: yup.string(),
     about: yup.string(),
     email: yup.string(),
-    website: yup.string(),
     twitter: yup.string(),
-    telegram: yup.string(),
-    instagram: yup.string(),
   });
   const [isFormSubmitting, setIsFormSubmitting] = useState(false);
 
@@ -214,7 +211,7 @@ export default function AccountEditProfileForm(props: {
             id="name"
             name="name"
             label="Name"
-            placeholder="Alice"
+            placeholder="Your Name"
             value={values.name}
             onChange={handleChange}
             error={touched.name && Boolean(errors.name)}
@@ -228,7 +225,7 @@ export default function AccountEditProfileForm(props: {
             id="about"
             name="about"
             label="About"
-            placeholder="crypto enthusiast..."
+            placeholder="Earth Activist..."
             multiline={true}
             rows={3}
             value={values.about}
@@ -244,7 +241,7 @@ export default function AccountEditProfileForm(props: {
             id="email"
             name="email"
             label="Email"
-            placeholder="alice@community-challenges.xyz"
+            placeholder="yourname@gmail.com"
             value={values.email}
             onChange={handleChange}
             error={touched.email && Boolean(errors.email)}
@@ -252,20 +249,7 @@ export default function AccountEditProfileForm(props: {
             disabled={isFormDisabled}
             sx={{ mt: 2 }}
           />
-          {/* Website */}
-          <TextField
-            fullWidth
-            id="website"
-            name="website"
-            label="Website"
-            placeholder="https://community-challenges.xyz/"
-            value={values.website}
-            onChange={handleChange}
-            error={touched.website && Boolean(errors.website)}
-            helperText={touched.website && errors.website}
-            disabled={isFormDisabled}
-            sx={{ mt: 2 }}
-          />
+         
           {/* Twitter */}
           <TextField
             fullWidth
@@ -280,34 +264,8 @@ export default function AccountEditProfileForm(props: {
             disabled={isFormDisabled}
             sx={{ mt: 2 }}
           />
-          {/* Telegram */}
-          <TextField
-            fullWidth
-            id="telegram"
-            name="telegram"
-            label="Telegram"
-            placeholder="username"
-            value={values.telegram}
-            onChange={handleChange}
-            error={touched.telegram && Boolean(errors.telegram)}
-            helperText={touched.telegram && errors.telegram}
-            disabled={isFormDisabled}
-            sx={{ mt: 2 }}
-          />
-          {/* Instagram */}
-          <TextField
-            fullWidth
-            id="instagram"
-            name="instagram"
-            label="Instagram"
-            placeholder="username"
-            value={values.instagram}
-            onChange={handleChange}
-            error={touched.instagram && Boolean(errors.instagram)}
-            helperText={touched.instagram && errors.instagram}
-            disabled={isFormDisabled}
-            sx={{ mt: 2 }}
-          />
+     
+         
           {/* Submit button */}
           <Box display="flex" flexDirection="column" alignItems="center" mt={4}>
             <XxlLoadingButton

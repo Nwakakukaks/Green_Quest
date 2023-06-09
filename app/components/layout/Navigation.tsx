@@ -56,24 +56,16 @@ export default function Navigation() {
           >
             <Link href="/" passHref legacyBehavior>
               <MuiLink variant="h6" fontWeight={700} color="#000000">
-                Community Challenges
+                Green Quest
               </MuiLink>
             </Link>
-            <Typography
-              color="text.secondary"
-              variant="body2"
-              sx={{ ml: { md: 1 } }}
-            >
-              {packageJson.version}-dev
-            </Typography>
+          
           </Box>
           {/* Start challenge button */}
           <Box
             sx={{ display: { xs: "none", md: "block" }, flexGrow: 0, mr: 3.5 }}
           >
-            <Link href="/challenges/start" legacyBehavior>
-              <Button variant="contained">Start Challenge</Button>
-            </Link>
+            
           </Box>
           {/* Account link */}
           {isConnected && (
@@ -111,7 +103,7 @@ export default function Navigation() {
                   textDecoration: "none",
                 }}
               >
-                Explore
+                Discover Quests
               </Typography>
             </Link>
           </Box>
@@ -123,27 +115,9 @@ export default function Navigation() {
             />
           </Box>
           {/* GitHub link */}
-          <Box sx={{ display: { xs: "none", md: "block" }, flexGrow: 0 }}>
-            <IconButton
-              href={CONTACTS.github}
-              target="_blank"
-              component="a"
-              sx={{ color: "#000000" }}
-            >
-              <GitHub />
-            </IconButton>
-          </Box>
+          
           {/* Button to open mobile menu */}
-          <IconButton
-            onClick={handleClick}
-            size="small"
-            sx={{ display: { xs: "block", md: "none" }, ml: 1.5 }}
-            aria-controls={open ? "mobile-menu" : undefined}
-            aria-haspopup="true"
-            aria-expanded={open ? "true" : undefined}
-          >
-            <MenuRounded />
-          </IconButton>
+         
           {/* Mobile menu */}
           <Menu
             anchorEl={anchorEl}
@@ -194,16 +168,11 @@ export default function Navigation() {
             )}
             {/* Explore challenges link */}
             <Link href="/challenges" passHref legacyBehavior>
-              <MenuItem>Explore</MenuItem>
+              <MenuItem>Discover Quests</MenuItem>
             </Link>
             <Divider />
             {/* GitHub link */}
-            <MenuItem href={CONTACTS.github} target="_blank" component="a">
-              <ListItemIcon>
-                <GitHub fontSize="small" />
-              </ListItemIcon>
-              GitHub
-            </MenuItem>
+           
           </Menu>
         </Toolbar>
       </Container>

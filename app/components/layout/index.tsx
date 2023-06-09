@@ -20,8 +20,7 @@ export default function Layout(props: {
       <CssBaseline />
       <Head>
         <title>
-          Community Challenges - Boost engagement in your community with
-          challenges!
+          Green Quest - Unique daily challenges to promote the green culture
         </title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>

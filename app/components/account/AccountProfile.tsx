@@ -134,26 +134,7 @@ export default function AccountProfile(props: { address: string }) {
                 <Twitter />
               </IconButton>
             )}
-            {profileData?.attributes?.[5]?.value && (
-              <IconButton
-                href={`https://t.me/${profileData.attributes[5].value}`}
-                target="_blank"
-                component="a"
-                color="primary"
-              >
-                <Telegram />
-              </IconButton>
-            )}
-            {profileData?.attributes?.[6]?.value && (
-              <IconButton
-                href={`https://instagram.com/${profileData.attributes[6].value}`}
-                target="_blank"
-                component="a"
-                color="primary"
-              >
-                <Instagram />
-              </IconButton>
-            )}
+            
             {(profileData?.attributes?.[2]?.value ||
               profileData?.attributes?.[3]?.value ||
               profileData?.attributes?.[4]?.value ||
