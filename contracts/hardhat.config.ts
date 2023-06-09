@@ -25,7 +25,7 @@ const config: HardhatUserConfig = {
     },
   },
   networks: {
-    mumbai: { url: process.env.RPC_URL_MUMBAI || "", accounts: accounts },
+    polygon_mumbai: { url: process.env.RPC_URL_MUMBAI || "", accounts: accounts },
     "5ireTestnet": {
       url: process.env.RPC_URL_5IRE_TESTNET || "",
       accounts: accounts,
@@ -39,11 +39,7 @@ const config: HardhatUserConfig = {
       accounts: accounts,
     },
   },
-  etherscan: {
-    apiKey: {
-      polygonMumbai: process.env.ETHERSCAN_API_KEY_MUMBAI || "",
-    },
-  },
+
 };
 
 export default config;
