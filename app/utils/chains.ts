@@ -8,6 +8,8 @@ const mumbaiProfileContractAddress =
   process.env.NEXT_PUBLIC_MUMBAI_PROFILE_CONTRACT_ADDRESS;
 const mumbaiChallengeContractAddress =
   process.env.NEXT_PUBLIC_MUMBAI_CHALLENGE_CONTRACT_ADDRESS;
+const mumbaiPayoutAutomationContractAddress =
+  process.env.NEXT_PUBLIC_MUMBAI_CHALLENGE_CONTRACT_ADDRESS;
 
 const fiveIreTestnetProfileContractAddress =
   process.env.NEXT_PUBLIC_5IRE_TESTNET_PROFILE_CONTRACT_ADDRESS;
