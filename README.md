@@ -1,4 +1,4 @@
-# 🏆 Community Challenges
+# Green Quest
 
 Boost engagement in your community with challenges!
 
