@@ -27,6 +27,7 @@ export const typography = {
   h6: {
     "@media (max-width:600px)": {
       fontSize: "1.25rem",
+      color: '#228B22',
     },
   },
 };

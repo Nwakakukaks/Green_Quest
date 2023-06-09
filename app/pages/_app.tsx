@@ -32,7 +32,7 @@ const { chains, provider } = configureChains(
 );
 
 const { connectors } = getDefaultWallets({
-  appName: "Community Challenges",
+  appName: "Green Quest",
   chains,
 });
 

@@ -10,6 +10,7 @@ declare module "@mui/material/styles" {
     purpleLight: string;
     purpleDark: string;
     greyDark: string;
+    kbackground: string
   }
 }
 
@@ -32,4 +33,5 @@ export const palette: PaletteOptions = {
   purpleLight: "#9747FF",
   purpleDark: "#410C92",
   greyDark: "#333333",
+  kbackground: '#228B22'
 };

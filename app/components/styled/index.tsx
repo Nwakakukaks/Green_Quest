@@ -38,6 +38,7 @@ export const XxlLoadingButton = styled(LoadingButton)<LoadingButtonProps>(
   ({ theme, variant }) => ({
     fontSize: "24px",
     borderRadius: "78px",
+    color: "#008000",
     padding: "24px 48px",
     ...(variant === "outlined" && {
       border: "4px solid",
@@ -52,6 +53,7 @@ export const XlLoadingButton = styled(LoadingButton)<LoadingButtonProps>(
   ({ theme, variant }) => ({
     fontSize: "18px",
     borderRadius: "78px",
+    color: "#008000",
     padding: "14px 28px",
     ...(variant === "outlined" && {
       border: "4px solid",

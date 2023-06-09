@@ -84,6 +84,7 @@ export default function Landing() {
             flexDirection: "column",
             alignItems: "center",
             maxWidth: "md",
+            
           }}
         >
           {/* How does it work */}
@@ -92,6 +93,7 @@ export default function Landing() {
             fontWeight={700}
             sx={{ mt: 12, mb: 3 }}
             textAlign="center"
+            color="#008000"
           >
             How does it work?
           </Typography>
@@ -101,15 +103,15 @@ export default function Landing() {
               <TimelineSeparator>
                 <TimelineConnector sx={{ height: 12 }} />
                 <LandingTimelineDot
-                  sx={{ borderColor: "blue" }}
+                  sx={{ borderColor: "green" }}
                   variant="outlined"
                 >
-                  <Typography fontSize={50}>🏁</Typography>
+                  <Typography fontSize={40}>🏁</Typography>
                 </LandingTimelineDot>
                 <TimelineConnector sx={{ height: 12 }} />
               </TimelineSeparator>
               <TimelineContent sx={{ py: "48px", px: 2 }}>
-                <Typography fontWeight={700}>
+                <Typography fontWeight={700} color="#008000">
                   Community starts challenge by choosing a template with rules
                   for participation and defining prize pool, deadline
                 </Typography>
@@ -124,12 +126,12 @@ export default function Landing() {
                   sx={{ borderColor: "green" }}
                   variant="outlined"
                 >
-                  <Typography fontSize={50}>👥</Typography>
+                  <Typography fontSize={40}>👥</Typography>
                 </LandingTimelineDot>
                 <TimelineConnector sx={{ height: 12 }} />
               </TimelineSeparator>
               <TimelineContent sx={{ py: "48px", px: 2 }}>
-                <Typography fontWeight={700}>
+                <Typography fontWeight={700} color="#008000">
                   Members join the challenge, also share it with their friends
                   if the challenge rules motivate them to do so
                 </Typography>
@@ -140,15 +142,15 @@ export default function Landing() {
               <TimelineSeparator>
                 <TimelineConnector sx={{ height: 12 }} />
                 <LandingTimelineDot
-                  sx={{ borderColor: "yellow" }}
+                  sx={{ borderColor: "green" }}
                   variant="outlined"
                 >
-                  <Typography fontSize={50}>✔</Typography>
+                  <Typography fontSize={40}>✔</Typography>
                 </LandingTimelineDot>
                 <TimelineConnector sx={{ height: 12 }} />
               </TimelineSeparator>
               <TimelineContent sx={{ py: "48px", px: 2 }}>
-                <Typography fontWeight={700}>
+                <Typography fontWeight={700} color= "#008000">
                   Participants fulfill all conditions and mark the challenge as
                   completed, which will be verified by smart contracts and
                   oracles
@@ -160,15 +162,15 @@ export default function Landing() {
               <TimelineSeparator>
                 <TimelineConnector sx={{ height: 12 }} />
                 <LandingTimelineDot
-                  sx={{ borderColor: "red" }}
+                  sx={{ borderColor: "green" }}
                   variant="outlined"
                 >
-                  <Typography fontSize={50}>💰</Typography>
+                  <Typography fontSize={40}>💰</Typography>
                 </LandingTimelineDot>
                 <TimelineConnector sx={{ height: 12 }} />
               </TimelineSeparator>
               <TimelineContent sx={{ py: "48px", px: 2 }}>
-                <Typography fontWeight={700}>
+                <Typography fontWeight={700} color="#008000">
                   After the deadline, the community finalizes the challenge, and
                   each participant with a verified completion will receive a
                   part of the prize pool
@@ -183,12 +185,12 @@ export default function Landing() {
                   sx={{ borderColor: "green" }}
                   variant="outlined"
                 >
-                  <Typography fontSize={50}>🌎</Typography>
+                  <Typography fontSize={40}>🌎</Typography>
                 </LandingTimelineDot>
                 <TimelineConnector sx={{ height: 12 }} />
               </TimelineSeparator>
               <TimelineContent sx={{ py: "48px", px: 2 }}>
-                <Typography fontWeight={700}>
+                <Typography fontWeight={700} color="#008000">
                   Eventually everyone is happy, and the community becomes more
                   engaged
                 </Typography>
@@ -197,8 +199,10 @@ export default function Landing() {
           </Timeline>
           <XxlLoadingButton
             variant="outlined"
+            
             href="/challenges/start"
             sx={{ mt: 2 }}
+            
           >
             Start Quest
           </XxlLoadingButton>

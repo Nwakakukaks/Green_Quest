@@ -55,7 +55,7 @@ export default function Navigation() {
             }}
           >
             <Link href="/" passHref legacyBehavior>
-              <MuiLink variant="h6" fontWeight={700} color="#000000">
+              <MuiLink variant="h6" fontWeight={700} color="#008000">
                 Green Quest
               </MuiLink>
             </Link>
@@ -81,7 +81,7 @@ export default function Navigation() {
                   component="a"
                   sx={{
                     fontWeight: 700,
-                    color: "inherit",
+                    color: "#008000",
                     textDecoration: "none",
                   }}
                 >
@@ -99,7 +99,7 @@ export default function Navigation() {
                 component="a"
                 sx={{
                   fontWeight: 700,
-                  color: "inherit",
+                  color: "#008000",
                   textDecoration: "none",
                 }}
               >

@@ -23,7 +23,7 @@ function Copyright(props: { sx?: SxProps }) {
   return (
     <Container sx={{ maxWidth: "md", ...props.sx }}>
       <ThickDivider sx={{ mb: 4 }} />
-      <Typography color="text.secondary" variant="body2" textAlign="center">
+      <Typography color="text.secondary" variant="body2" textAlign="center" color="#008000">
       Engage in daily quests, earn tokens making the earth SAFE | @ Green Quest 2023 
       </Typography>
     </Container>
