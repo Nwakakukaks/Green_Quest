@@ -127,7 +127,7 @@ function ChallengeVerifyForm(props: { id: string; onSuccess?: Function }) {
   return (
     <>
       <WidgetSeparatorText>
-        verify twitter activity before marking the challenge as completed
+        You must verify Quest before marking the challenge as completed
       </WidgetSeparatorText>
       <XxlLoadingButton
         variant="contained"
@@ -179,7 +179,7 @@ function ChallengeCompleteForm(props: { id: string; onSuccess?: Function }) {
   return (
     <>
       <WidgetSeparatorText>
-        twitter activity verified, now you can complete the challenge
+        Quest verified, now you can complete the challenge
       </WidgetSeparatorText>
       <XxlLoadingButton
         variant="contained"

@@ -17,9 +17,9 @@ import {
 import { useNetwork } from "wagmi";
 
 /**
- * A component with challenge parameters.
+ * A component with Quest parameters.
  */
-export default function ChallengeParams(props: {
+export default function QuestParams(props: {
   id: string;
   createdTimestamp: BigNumber;
   creator: string;
@@ -43,7 +43,7 @@ export default function ChallengeParams(props: {
         textAlign="center"
         sx={{ mb: 3 }}
       >
-        🏆 Challenge #{props.id}
+        🏆 Quest #{props.id}
       </Typography>
       <WidgetSeparatorText mb={2}>was started</WidgetSeparatorText>
       {/* Creator */}
@@ -69,8 +69,8 @@ export default function ChallengeParams(props: {
         </Stack>
       </WidgetBox>
       <WidgetSeparatorText mb={2}>
-        which will be shared among the participants who will complete the
-        challenge
+        To be shared among the participants who will complete the
+        Quest
       </WidgetSeparatorText>
       {/* Deadline */}
       <WidgetBox bgcolor={palette.red} mb={2}>

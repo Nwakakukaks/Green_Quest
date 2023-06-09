@@ -6,14 +6,14 @@ import {
   WidgetTitle,
   XxlLoadingButton,
 } from "components/styled";
-import { challengeContractAbi } from "contracts/abi/challengeContract";
+import { QuestContractAbi } from "contracts/abi/QuestContract";
 import { BigNumber } from "ethers";
 import { Form, Formik } from "formik";
 import useDebounce from "hooks/useDebounce";
 import useToasts from "hooks/useToast";
 import { useEffect, useState } from "react";
 import { palette } from "theme/palette";
-import { getChainId, getChallengeContractAddress } from "utils/chains";
+import { getChainId, getQuestContractAddress } from "utils/chains";
 import {
   useContractWrite,
   useNetwork,
@@ -23,9 +23,9 @@ import {
 import * as yup from "yup";
 
 /**
- * Dialog to participate in challenge.
+ * Dialog to participate in Quest.
  */
-export default function ChallengeParticipateDialog(props: {
+export default function QuestParticipateDialog(props: {
   id: string;
   onSuccess?: Function;
   isClose?: boolean;
@@ -39,7 +39,7 @@ export default function ChallengeParticipateDialog(props: {
 
   // Form states
   const [formValues, setFormValues] = useState({
-    handle: "JannieLibo",
+    handle: "Hanal del",
   });
   const formValidationSchema = yup.object({
     handle: yup.string().required(),
@@ -49,8 +49,8 @@ export default function ChallengeParticipateDialog(props: {
   // Contract states
   const { config: contractPrepareConfig, isError: isContractPrepareError } =
     usePrepareContractWrite({
-      address: getChallengeContractAddress(chain),
-      abi: challengeContractAbi,
+      address: getQuestContractAddress(chain),
+      abi: QuestContractAbi,
       functionName: "participate",
       args: [BigNumber.from(props.id), debouncedFormValues.handle],
       chainId: getChainId(chain),
@@ -83,7 +83,7 @@ export default function ChallengeParticipateDialog(props: {
    */
   useEffect(() => {
     if (isTransactionSuccess) {
-      showToastSuccess("You successfully joined the challenge!");
+      showToastSuccess("You successfully joined the Quest!");
       props.onSuccess?.();
       close();
     }
@@ -96,7 +96,7 @@ export default function ChallengeParticipateDialog(props: {
           👥 To participate
         </Typography>
         <Typography fontWeight={700} textAlign="center" sx={{ mt: 2 }}>
-          you should define your twitter handle
+          Link your Social Profile
         </Typography>
         <Formik
           initialValues={formValues}
