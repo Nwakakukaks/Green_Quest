@@ -32,8 +32,8 @@ export default function ChallengeShareActions(props: {
           ...props.sx,
         }}
       >
-        <Typography variant="h6" textAlign="center">
-          🗣️ Share Quest 
+        <Typography variant="h6" textAlign="center" color='#008000'>
+         Share Quest 
         </Typography>
         {/* Buttons to share via social networks */}
         <Stack
@@ -45,7 +45,7 @@ export default function ChallengeShareActions(props: {
           <IconButton
             href={`https://twitter.com/intent/tweet?url=${challengeLink}`}
             target="_blank"
-            color="primary"
+           
             sx={{ border: 4, p: 3 }}
           >
             <Twitter sx={{ fontSize: 36 }} />
@@ -53,7 +53,7 @@ export default function ChallengeShareActions(props: {
           <IconButton
             href={`https://t.me/share/url?url=${challengeLink}`}
             target="_blank"
-            color="primary"
+          
             sx={{ border: 4, p: 3 }}
           >
             <Telegram sx={{ fontSize: 36 }} />
@@ -81,6 +81,7 @@ export default function ChallengeShareActions(props: {
                 lineBreak: "anywhere",
                 fontWeight: 700,
                 textAlign: "center",
+                color: "#008000",
                 mb: { xs: 2, md: 0 },
               }}
             >

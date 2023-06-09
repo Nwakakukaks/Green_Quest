@@ -8,8 +8,8 @@ import ChallengeShareActions from "./ChallengeShareActions";
 export default function ChallengeStartedMessage(props: { id: string }) {
   return (
     <CentralizedBox>
-      <Typography variant="h4" textAlign="center" fontWeight={700}>
-        🤟 Congrats, you started a Quest!
+      <Typography variant="h4" textAlign="center" fontWeight={700} color= '#008000'>
+        Success, you've started a Quest!
       </Typography>
       <ThickDivider sx={{ mt: 5 }} />
       <ChallengeShareActions id={props.id} sx={{ mt: 6 }} />

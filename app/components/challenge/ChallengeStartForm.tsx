@@ -48,9 +48,10 @@ export default function ChallengeStartForm(props: {
   const { showToastError } = useToasts();
 
   const challengeTypes = [
+    'Join local or global climate action networks to amplify your impact and collaborate on larger initiatives.',
     "Calculate your personal carbon footprint using online tools or calculators.",
     'Set goals to reduce your carbon footprint by adopting energy-saving habits and lifestyle changes.',
-    'Join local or global climate action networks to amplify your impact and collaborate on larger initiatives.',
+   
     'Create informative content (blogs, social media posts, videos) to raise awareness about climate change, renewable energy, and the importance of individual actions.'
   ];
 
@@ -61,9 +62,9 @@ export default function ChallengeStartForm(props: {
     handle: "GreenQuestOrg",
     description:
       "Join local or global climate action networks to amplify your impact and collaborate on larger initiatives, tweet your engagements with the hashtag #ReduceCarbonEmissions and mention @GreenQuestOrg to win prizes from the Pool Prize",
-    prize: 5000,
+    prize: 0.0001,
     prizeCurrency: "native",
-    deadline: "2023-06-01",
+    deadline: "2023-06-20",
   });
   const formValidationSchema = yup.object({
     duration: yup.number().required(),
@@ -130,7 +131,7 @@ export default function ChallengeStartForm(props: {
   return (
     <CentralizedBox>
       <Typography variant="h4" fontWeight={700} sx={{ mb: 3 }}>
-        🚀 I want start
+        Join Quest
       </Typography>
       <Formik
         initialValues={formValues}
@@ -141,8 +142,8 @@ export default function ChallengeStartForm(props: {
           <Form style={{ width: "100%" }}>
             <FormikHelper onChange={(values: any) => setFormValues(values)} />
             {/* Type input */}
-            <WidgetBox bgcolor={palette.blue} mb={3}>
-              <WidgetTitle>Challenge</WidgetTitle>
+            <WidgetBox bgcolor={palette.kbackground} mb={3}>
+              <WidgetTitle>Available Quests</WidgetTitle>
               <Autocomplete
                 defaultValue={challengeTypes[0]}
                 options={challengeTypes.map((type) => type)}
@@ -163,8 +164,8 @@ export default function ChallengeStartForm(props: {
             </WidgetBox>
             <WidgetSeparatorText mb={3}>where</WidgetSeparatorText>
             {/* Duration input */}
-            <WidgetBox bgcolor={palette.purpleDark} mb={3}>
-              <WidgetTitle>Days X</WidgetTitle>
+            <WidgetBox bgcolor={palette.kbackground} mb={3}>
+              <WidgetTitle>Duration</WidgetTitle>
               <WidgetInputTextField
                 id="duration"
                 name="duration"
@@ -178,8 +179,8 @@ export default function ChallengeStartForm(props: {
               />
             </WidgetBox>
             {/* Hashtag input */}
-            <WidgetBox bgcolor={palette.purpleDark} mb={3}>
-              <WidgetTitle>Hashtag Y</WidgetTitle>
+            <WidgetBox bgcolor={palette.kbackground} mb={3}>
+              <WidgetTitle>Hashtags</WidgetTitle>
               <WidgetInputTextField
                 id="hashtag"
                 name="hashtag"
@@ -192,8 +193,8 @@ export default function ChallengeStartForm(props: {
               />
             </WidgetBox>
             {/* Handle input */}
-            <WidgetBox bgcolor={palette.purpleDark} mb={3}>
-              <WidgetTitle>Mention Z</WidgetTitle>
+            <WidgetBox bgcolor={palette.kbackground} mb={3}>
+              <WidgetTitle>Mention</WidgetTitle>
               <WidgetInputTextField
                 id="handle"
                 name="handle"
@@ -207,8 +208,8 @@ export default function ChallengeStartForm(props: {
             </WidgetBox>
             <WidgetSeparatorText mb={3}>with</WidgetSeparatorText>
             {/* Description input */}
-            <WidgetBox bgcolor={palette.purpleLight} mb={3}>
-              <WidgetTitle>Description</WidgetTitle>
+            <WidgetBox bgcolor={palette.kbackground} mb={3}>
+              <WidgetTitle>QuestDescription</WidgetTitle>
               <WidgetInputTextField
                 id="description"
                 name="description"
@@ -224,7 +225,7 @@ export default function ChallengeStartForm(props: {
             </WidgetBox>
             <WidgetSeparatorText mb={3}>and</WidgetSeparatorText>
             {/* Prize input */}
-            <WidgetBox bgcolor={palette.green} mb={3}>
+            <WidgetBox bgcolor={palette.kbackground} mb={3}>
               <WidgetTitle>Prize Pool</WidgetTitle>
               <Stack direction="row" spacing={1} sx={{ width: 1 }}>
                 <WidgetInputTextField
@@ -257,7 +258,7 @@ export default function ChallengeStartForm(props: {
               challenge
             </WidgetSeparatorText>
             {/* Deadline input */}
-            <WidgetBox bgcolor={palette.red} mb={3}>
+            <WidgetBox bgcolor={palette.kbackground} mb={3}>
               <WidgetTitle>By</WidgetTitle>
               <WidgetInputTextField
                 id="deadline"
@@ -277,9 +278,10 @@ export default function ChallengeStartForm(props: {
                 loading={isFormLoading}
                 variant="contained"
                 type="submit"
+                
                 disabled={isFormSubmitButtonDisabled}
               >
-                Start Challenge
+                Begin Quest
               </XxlLoadingButton>
             </Box>
           </Form>
