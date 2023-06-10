@@ -43,15 +43,15 @@ Green Quest is built to promote a green future. Our innovative app is designed t
 
 - NextJS - used for the frontend application
 - Chainlink Keepers - Used to automate payouts after quests are completed
-- Chainlink's price feed contract to obtain the latest MATIC/USD exchange rate.
-- Chainlink Oracles for verifying smart contract
+- Chainlink's price feed contract to obtain current MATIC/USD exchange rate for accurate payout to quest winners.
+- Chainlink Oracles is used to verify the involvement and activities of participants through smart contracts
 - solidity - for the contract 
-- IPFS - used to store quest informations
+- IPFS - used for decentralized storage
 - Polygon - Green quest is deployed on the polygon blockchain
 
 ## Next Steps
 
-Tips and Resources: integrate practical tips, tutorials, and resources to support users in adopting sustainable practices. This can include information on energy-efficient appliances, eco-friendly products, sustainable travel options, and local recycling programs.
+Tips and Resources: integrate practical tips, tutorials, and resources to support users in adopting sustainable practices. This include information on energy-efficient appliances, eco-friendly products, sustainable travel options, and local recycling programs.
 
 Impact Measurement: Build a dashboard that quantify and showcase the collective impact of users' green actions, such as the amount of CO2 emissions reduced, water saved, or waste diverted from landfills. This helps users understand the significance of their contributions.
 
