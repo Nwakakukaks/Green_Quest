@@ -1,6 +1,5 @@
 # Green Quest
-Green Quest is built to promote a green future
-Green Quest helps to promote and accelerate the adoption of green energy sources, to combat climate change and create a sustainable future by creating a fun and engaging approach. Participants will engage in various activities and initiatives to reduce carbon emissions, increase renewable energy usage, and raise awareness about the importance of transitioning to a green energy economy.
+Green Quest is built to promote a green future. Our innovative app is designed to accelerate the adoption of green energy, combat climate change, and create a sustainable future. Engage in exciting activities and initiatives that reduce carbon emissions, promote renewable energy, and spread awareness about the urgent need for a green energy economy.
 
 ## Current Climate Challenges:
 
@@ -34,12 +33,11 @@ Green Quest helps to promote and accelerate the adoption of green energy sources
 
 ## 🪄 How does it work?
 
-1. Community starts challenge by choosing a template with rules for participation and defining prize pool, deadline.
-2. After that, shares the link to the challenge with other members of the community.
-3. Members join the challenge. Also share it with their friends if the challenge rules motivate them to do so.
-4. Participants fulfill all conditions and mark the challenge as completed, which will be verified by smart contracts and oracles.
-5. After the deadline, the community finalizes the challenge, and each participant with a verified completion will receive a part of the prize pool.
-6. Eventually everyone is happy, and the community becomes more engaged.
+1. Organization creates a series of green quests, defining the quest duration and pool prize for winners paid out in MATIC
+2. After that, shares the link to the quest.
+3. Anyone can join the challenge and also share it with their friends.
+4. Participants fulfill all conditions and mark the challenge as completed, which will be verified by smart contracts and chainlink oracles.
+5. After the deadline, the organization finalizes the quest, and payout is processed automatically by chainlink keepers to each participant with a verified completion.
 
 ## Technology Stack
 
