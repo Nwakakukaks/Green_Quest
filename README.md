@@ -1,5 +1,5 @@
 # Green Quest
-Green Quest is built to promote a green future. Our innovative app is designed to accelerate the adoption of green energy, combat climate change, and create a sustainable future. Engage in exciting activities and initiatives that reduce carbon emissions, promote renewable energy, and spread awareness about the urgent need for a green energy economy.
+Green Quest is built to promote a green future. Our innovative app is designed to accelerate the adoption of green energy, combat climate change, and create a sustainable future. Sign up and Engage in exciting Quests and initiatives that reduce carbon emissions, promote renewable energy, and spread awareness about the urgent need for a green energy economy.
 
 ## Current Climate Challenges:
 
